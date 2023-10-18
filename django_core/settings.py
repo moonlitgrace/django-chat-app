@@ -31,12 +31,19 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    # manage asgi runserver
+    'daphne',
+    # django apps
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # django 3rd party
+    'channels',
+    # apps
+    'chat',
 ]
 
 MIDDLEWARE = [
@@ -68,6 +75,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'django_core.wsgi.application'
+# daphne
+ASGI_APPLICATION = 'django_core.asgi.application'
 
 
 # Database
