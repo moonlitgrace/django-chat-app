@@ -7,7 +7,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
-django = "^4.2.7"
+django = "^4.2.8"
 channels = {extras = ["daphne"], version = "^4.0.0"}
 
 
